@@ -1,0 +1,5 @@
+weapons/raptor      raptfire
+weapons/raptormelee raptswsh
+weapons/raptormhit  raptslsh
+weapons/raptordeflect  raptdflc
+

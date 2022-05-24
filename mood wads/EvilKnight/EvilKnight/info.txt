@@ -1,0 +1,22 @@
+// Information \\
+Name : Evil Knight
+Difficulty : Easy
+Connections : None
+Melee : Yes
+Distance : Projectile
+Type : Demon,Medieval
+
+// Credits \\
+Submitted : Mr.Green
+Decorate : Mr.Green
+GLDefs : Mr.Green
+Sounds : ID Software
+Sprites : Bullfrog,Raven Software
+
+// Description \\
+An armored minions of hell,Evil Knights have ability to hurl fireballs from
+their swords.
+
+// Note \\
+The monster has still it's bloodless death sprites,
+so they can be used for example fisted-dying animation.

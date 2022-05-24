@@ -1,0 +1,8 @@
+dknight/sight	dsknisit
+dknight/active	dskniact
+dknight/swing	dsknimel
+dknight/melee	dsknichp
+dknight/attack	dskniatk
+dknight/pain	dsknipn1
+dknight/death	dsknidie
+

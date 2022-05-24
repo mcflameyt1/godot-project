@@ -1,0 +1,38 @@
+Pointlight KFireBall1
+{
+Color 0.6 0.3 0.0
+Size 34
+}
+
+Pointlight KFireBall2
+{
+Color 0.6 0.3 0.0
+Size 74
+}
+
+Pointlight KFireBall3
+{
+Color 0.6 0.3 0.0
+Size 64
+}
+
+Pointlight KFireBall4
+{
+Color 0.6 0.3 0.0
+Size 54
+}
+
+Pointlight KFireBall5
+{
+Color 0.6 0.3 0.0
+Size 44
+}
+
+Object KFireBall
+{
+Frame FDMBA { Light KFireBall1 }
+Frame FDMBB { Light KFireBall2 }
+Frame FDMBC { Light KFireBall3 }
+Frame FDMBD { Light KFireBall4 }
+Frame FDMBE { Light KFireBall5 }
+}

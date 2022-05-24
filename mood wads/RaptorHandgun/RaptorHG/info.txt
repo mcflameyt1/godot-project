@@ -1,0 +1,17 @@
+Name: Raptor Handgun
+
+Class: 4
+Type: Hitscan, Melee
+Palette: Doom
+Summon: Raptor
+Ammo Type: Clip
+Altfire: Yes
+Powered Mode: No
+Added States: No
+
+
+Description:
+A powerful handgun that is capable of firing a two-round burst of two rounds.
+(4 shots fired per trigger pull.)
+
+The handgun also has attatched blades, which can be used to ward off close range enemies.
