@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://blenderimports/test level.glb" type="PackedScene" id=2]
+
+[node name="test level" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.536563, 0 )
+
+[node name="player" parent="." index="1" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.76504, 4.05076, 1.09472 )
