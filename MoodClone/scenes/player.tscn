@@ -21,9 +21,9 @@ shape = SubResource( 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
 shape = SubResource( 2 )
 
-[node name="pivot" type="Spatial" parent="."]
+[node name="Pivot" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0 )
 
-[node name="gun" type="Spatial" parent="pivot"]
+[node name="Gun" type="Spatial" parent="Pivot"]
 
-[node name="Camera" type="Camera" parent="pivot"]
+[node name="Camera" type="Camera" parent="Pivot"]

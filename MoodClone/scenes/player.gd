@@ -4,7 +4,7 @@ extends KinematicBody
 var velocity = Vector3()
 var gravity = -30
 var max_speed = 8
-var mouse_sensitvity = 0.002
+var mouse_sensitivity = 0.002
 
 #gun variables
 
@@ -21,14 +21,17 @@ func get_input():
 		input_dir += global_transform.basis.z
 	if Input.is_action_pressed("strafe_left"):
 		input_dir += -global_transform.basis.x
-	if Input.is_action_pressed("strafe right"):
+	if Input.is_action_pressed("strafe_right"):
 		input_dir += global_transform.basis.x
 	input_dir = input_dir.normalized() #cancel strafe running
 	return input_dir
 	
 	
 func _unhandled_input(event):
-	pass
+	if event is InputEventMouseMotion:
+		rotate_y(-event.relative.x * mouse_sensitivity)
+		$Pivot.rotate_x(-event.relative.y * mouse_sensitivity)
+		$Pivot.rotation.x = clamp($Pivot.rotation.x,-1.2,1.2)
 	
 func _physics_process(delta):
 	#gravity
