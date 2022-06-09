@@ -30,14 +30,19 @@ radius = 0.5
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "Shoot",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 15 ), ExtResource( 10 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "Die",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "walking",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 19 ), ExtResource( 19 ) ],
-"loop": false,
-"name": "Hit",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 2 ) ],
@@ -45,19 +50,14 @@ animations = [ {
 "name": "Idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 14 ) ],
-"loop": false,
-"name": "Shoot",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 11 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 23 ) ],
 "loop": false,
 "name": "Explode",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 16 ), ExtResource( 15 ), ExtResource( 10 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"frames": [ ExtResource( 19 ), ExtResource( 19 ) ],
 "loop": false,
-"name": "Die",
+"name": "Hit",
 "speed": 5.0
 } ]
 
@@ -69,8 +69,14 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform( 3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 0, -1, 0 )
+centered = false
+offset = Vector2( -16, 0 )
+billboard = 2
 frames = SubResource( 2 )
-animation = "Hit"
+animation = "walking"
+frame = 1
+playing = true
 
 [node name="RayCast" type="RayCast" parent="."]
 
