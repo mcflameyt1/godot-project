@@ -19,27 +19,27 @@ func take_damage(dmg_amount):
 	
 func _physics_process(delta):
 	if path_index < path.size():
-		var direction = (path[path_index] - global_transform)
+		var direction = (path[path_index] - global_transform.origin)
 		if direction.length() < 1:
 			path_index += 1
 		else:
-			move_and_slide(direction.normalize() * speed, Vector3.UP)
+			move_and_slide(direction.normalized() * speed, Vector3.UP)
 	else:
 		find_path(player.global_transform.origin)
 	
 	
 func find_path(target):
-	path = nav.get_simple_path(global_transform.origin)
+	path = nav.get_simple_path(global_transform.origin,target)
 	path_index = 0
 	
 func death():
 	set_process(false)
 	set_physics_process(false)
-	$CollosionShape.disabled = true
+	$CollisionShape.disabled = true
 	if health < -20:
-		$AnimationSprite3D.play("explode")
+		$AnimationSprite3D.play("Explode")
 	else:
-		$AnimationSprite3D.play("die")
+		$AnimationSprite3D.play("Die")
 	
 	
 	

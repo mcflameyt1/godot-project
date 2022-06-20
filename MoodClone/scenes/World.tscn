@@ -7,8 +7,9 @@
 [node name="World" type="Spatial"]
 
 [node name="player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.53236, 0 )
 
 [node name="test level" parent="." instance=ExtResource( 2 )]
 
 [node name="EnemyBasicGrunt" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.51626, 0.459222, 16.3278 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2213, -0.516664, 35.2661 )

@@ -43,6 +43,7 @@ data = PoolVector3Array( 0.4, 0, 0, 1, 0, -1, 1, 0, 0, 0.4, 0, 0, 0.4, 0, -1, 1,
 [node name="Navigation" type="Navigation" parent="." index="0" groups=["NavMesh"]]
 
 [node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="Navigation" index="0"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
 navmesh = SubResource( 3 )
 
 [node name="Plane" type="MeshInstance" parent="Navigation/NavigationMeshInstance" index="0"]
