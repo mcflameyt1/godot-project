@@ -7,6 +7,10 @@ var max_speed = 8
 var mouse_sensitivity = 0.002
 
 #gun variables
+onready var pistol = preload("res://scenes/pistol.tscn")
+onready var shotgun = preload("res://scenes/Shotgun.tscn")
+var current_gun = 0
+onready var carried_guns = [pistol,shotgun]
 
 
 #functions
@@ -42,8 +46,19 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, Vector3.UP, true)
 	
 	
-func _change_gun(gun):
-	pass
+func change_gun(gun):
+	$Pivot/Gun.get_child(0).queue_free()
+	var new_gun = carried_guns[gun].instance()
+	$Pivot/Gun.add_child(new_gun)
 	
 func _process(delta):
-	pass
+	if Input.is_action_just_pressed("next_gun"):
+		current_gun+=1
+		if current_gun > len(carried_guns)-1:
+			current_gun = 0
+			change_gun(current_gun)
+	elif Input.is_action_just_pressed("prev_gun"):
+		current_gun -=1
+		if current_gun < 0:
+			current_gun = len(carried_guns)-1
+		change_gun(current_gun)
