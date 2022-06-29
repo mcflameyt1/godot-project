@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Sprites/Uzi/uziga0.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Uzi/uzigb0.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Uzi/uzigc0.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Uzi/uzigd0.png" type="Texture" id=4]
+[ext_resource path="res://scenes/gun.gd" type="Script" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "shoot",
+"speed": 12.0
+} ]
+
+[node name="Uzi" type="Spatial"]
+script = ExtResource( 6 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+
+[node name="GunSprite" type="AnimatedSprite" parent="CanvasLayer/Control"]
+position = Vector2( -192, 57 )
+rotation = 3.14159
+scale = Vector2( 3, 3 )
+frames = SubResource( 1 )
+animation = "shoot"
+frame = 2
+playing = true
+centered = false
+flip_h = true
+flip_v = true
+
+[node name="GunRays" type="Spatial" parent="."]
+
+[node name="RayCast" type="RayCast" parent="GunRays"]
+enabled = true
+cast_to = Vector3( 0, 0, -20 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

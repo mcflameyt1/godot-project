@@ -9,8 +9,9 @@ var mouse_sensitivity = 0.002
 #gun variables
 onready var pistol = preload("res://scenes/pistol.tscn")
 onready var shotgun = preload("res://scenes/Shotgun.tscn")
+onready var uzi = preload("res://scenes/Uzi.tscn")
 var current_gun = 0
-onready var carried_guns = [pistol,shotgun]
+onready var carried_guns = [pistol,shotgun,uzi]
 
 
 #functions
