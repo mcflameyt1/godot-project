@@ -1,0 +1,8 @@
+40mm/grenfire gfire
+40mm/grenbounce bounce
+
+explode1 explode1
+explode2 explode2
+explode3 explode3
+explode4 explode4
+$RANDOM 40mm/grenexplode { explode1 explode2 explode3 explode4 }

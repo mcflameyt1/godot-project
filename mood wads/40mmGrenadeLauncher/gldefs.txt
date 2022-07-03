@@ -1,0 +1,40 @@
+Object 40mmShot
+{
+ Frame MIS6B { Light Explod }
+ Frame MIS6C { Light Explod2 }
+ Frame MIS6D { Light Explod3 }
+ Frame MIS6E { Light Explod3 }
+ Frame MIS6F { Light Explod4 }
+}
+
+Object 40mmTimedShot
+{
+ Frame MIS6B { Light Explod }
+ Frame MIS6C { Light Explod2 }
+ Frame MIS6D { Light Explod3 }
+ Frame MIS6E { Light Explod3 }
+ Frame MIS6F { Light Explod4 }
+}
+
+Pointlight Explod
+{
+ Color 1.0 1.0 0.0
+ Size 90
+}
+Pointlight Explod2
+{
+ Color 1.0 1.0 0.0
+ Size 110
+}
+
+Pointlight Explod3
+{
+ Color 1.0 1.0 0.0
+ Size 60
+}
+
+Pointlight Explod4
+{
+ Color 1.0 1.0 0.0
+ Size 30
+}

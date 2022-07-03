@@ -1,0 +1,8 @@
+Submitted: ProjectAngel
+Updated: Ozymandias81, BadMojo
+Decorate: ProjectAngel
+GLDefs: BadMojo
+Sounds: Raven Software, id Software
+Sprites: Marty Kirra, 3d Realms, id Software, Midway Entertainment
+Sprite Edit: Marty Kirra
+Idea Base: Shadow Warrior Grenade Launcher, Militek MGL from 007: NightFire

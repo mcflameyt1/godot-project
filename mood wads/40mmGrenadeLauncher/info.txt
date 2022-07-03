@@ -1,0 +1,11 @@
+Name: 40mm Grenade Launcher
+Class: 5
+Type: Projectile
+Palette: Doom
+Summon: 40mmGrenadeLauncher
+Ammotype: 40mmGrenades
+AltFire: Yes
+Powered Mode: No
+Brightmaps: No
+Added States: No
+ACS: No

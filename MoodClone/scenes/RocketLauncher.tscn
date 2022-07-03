@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Sprites/SPRITES/rglfa0.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/SPRITES/rglgc0.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/SPRITES/rglgb0.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/SPRITES/rglga0.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/SPRITES/rglfb0.png" type="Texture" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "shoot",
+"speed": 6.0
+} ]
+
+[node name="RocketLauncher" type="Spatial"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+
+[node name="GunSprite" type="AnimatedSprite" parent="CanvasLayer/Control"]
+position = Vector2( -190, 40 )
+rotation = 3.14159
+scale = Vector2( 3, 3 )
+frames = SubResource( 1 )
+animation = "shoot"
+frame = 1
+playing = true
+centered = false
+flip_h = true
+flip_v = true
+
+[node name="Position3D" type="Position3D" parent="."]
