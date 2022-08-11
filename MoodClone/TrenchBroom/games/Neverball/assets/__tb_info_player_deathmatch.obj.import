@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/__tb_info_player_deathmatch.obj-d1dca48004c11a93a2370b344734cfa1.mesh"
+
+[deps]
+
+files=[ "res://.import/__tb_info_player_deathmatch.obj-d1dca48004c11a93a2370b344734cfa1.mesh" ]
+
+source_file="res://TrenchBroom/games/Neverball/assets/__tb_info_player_deathmatch.obj"
+dest_files=[ "res://.import/__tb_info_player_deathmatch.obj-d1dca48004c11a93a2370b344734cfa1.mesh", "res://.import/__tb_info_player_deathmatch.obj-d1dca48004c11a93a2370b344734cfa1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

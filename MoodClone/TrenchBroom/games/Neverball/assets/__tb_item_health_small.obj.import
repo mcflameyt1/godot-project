@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/__tb_item_health_small.obj-5aa5705dc83ee7a357be750b470694b2.mesh"
+
+[deps]
+
+files=[ "res://.import/__tb_item_health_small.obj-5aa5705dc83ee7a357be750b470694b2.mesh" ]
+
+source_file="res://TrenchBroom/games/Neverball/assets/__tb_item_health_small.obj"
+dest_files=[ "res://.import/__tb_item_health_small.obj-5aa5705dc83ee7a357be750b470694b2.mesh", "res://.import/__tb_item_health_small.obj-5aa5705dc83ee7a357be750b470694b2.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

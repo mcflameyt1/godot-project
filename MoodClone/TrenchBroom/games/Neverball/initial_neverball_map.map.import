@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/initial_neverball_map.map-b22bd51d8491b5a2de753e5264dfe983.tres"
+
+[deps]
+
+source_file="res://TrenchBroom/games/Neverball/initial_neverball_map.map"
+dest_files=[ "res://.import/initial_neverball_map.map-b22bd51d8491b5a2de753e5264dfe983.tres" ]
+
+[params]
+

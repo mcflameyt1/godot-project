@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.palette"
+type="Resource"
+path="res://.import/palette.lmp-45a7392fe3c635708a1d999db9344106.tres"
+
+[deps]
+
+source_file="res://TrenchBroom/games/Hexen2/palette.lmp"
+dest_files=[ "res://.import/palette.lmp-45a7392fe3c635708a1d999db9344106.tres" ]
+
+[params]
+
