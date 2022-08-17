@@ -2149,24 +2149,13 @@
 }
 // brush 236
 {
-( 208 -384 0 ) ( 208 -384 1 ) ( 208 -385 0 ) tnttextures/graphics/doslvr13 -56 0 0 -0.8 0.9
-( 224 -512 16 ) ( 224 -512 17 ) ( 225 -512 16 ) tnttextures/graphics/doslvr13 -36 0 0 0.8 0.9
-( 224 -496 112 ) ( 352 -512 96 ) ( 224 -512 96 ) tnttextures/graphics/doslvr13 -56 81.77779 270 0.8 0.9
-( 208 -384 0 ) ( 208 -385 0 ) ( 209 -384 0 ) tnttextures/graphics/doslvr13 -56 81.77779 270 0.8 0.9
-( 224 -512 112 ) ( 225 -512 112 ) ( 224 -513 112 ) tnttextures/graphics/doslvr13 -56 81.77779 270 0.8 0.9
-( 224 -400 112 ) ( 224 -384 96 ) ( 352 -384 96 ) tnttextures/graphics/doslvr13 -56 81.77779 270 0.8 0.9
-( 208 -384 0 ) ( 209 -384 0 ) ( 208 -384 1 ) tnttextures/graphics/doslvr13 -36 0 0 0.8 0.9
-( 224 -512 16 ) ( 224 -513 16 ) ( 224 -512 17 ) tnttextures/graphics/doslvr13 -56 0 0 -0.8 0.9
-}
-// brush 237
-{
-( -48 -96 0 ) ( -48 -95 0 ) ( -48 -96 1 ) tnttextures/graphics/doslvr13 -16 0 0 0.7 0.9
-( -32 -80 112 ) ( -48 -80 96 ) ( -48 48 96 ) tnttextures/graphics/doslvr13 -16 0 0 0.7 0.9
-( -64 -96 0 ) ( -64 -96 1 ) ( -63 -96 0 ) tnttextures/graphics/doslvr13 0 0 0 0.7 0.9
-( -64 -96 0 ) ( -63 -96 0 ) ( -64 -95 0 ) tnttextures/graphics/doslvr13 0 127.99999 0 0.7 0.9
-( 64 -80 112 ) ( 64 -79 112 ) ( 65 -80 112 ) tnttextures/graphics/doslvr13 0 127.99999 0 0.7 0.9
-( 64 -80 16 ) ( 65 -80 16 ) ( 64 -80 17 ) tnttextures/graphics/doslvr13 0 0 0 0.7 0.9
-( 32 -80 112 ) ( 48 48 96 ) ( 48 -80 96 ) tnttextures/graphics/doslvr13 0 127.99999 0 0.7 0.9
-( 48 -80 16 ) ( 48 -80 17 ) ( 48 -79 16 ) tnttextures/graphics/doslvr13 -16 0 0 0.7 0.9
+( -64 -240 0 ) ( -64 -239 0 ) ( -64 -240 1 ) tnttextures/graphics/doslvr13 -52 0 0 0.8 0.9
+( -48 -224 112 ) ( -64 -224 96 ) ( -64 -96 96 ) tnttextures/graphics/doslvr13 0 96 0 0.8 0.9
+( -64 -240 0 ) ( -64 -240 1 ) ( -63 -240 0 ) tnttextures/graphics/doslvr13 0 0 0 0.8 0.9
+( -64 -240 0 ) ( -63 -240 0 ) ( -64 -239 0 ) tnttextures/graphics/doslvr13 0 96 0 0.8 0.9
+( 64 -224 112 ) ( 64 -223 112 ) ( 65 -224 112 ) tnttextures/graphics/doslvr13 0 96 0 0.8 0.9
+( 64 -224 16 ) ( 65 -224 16 ) ( 64 -224 17 ) tnttextures/graphics/doslvr13 0 0 0 0.8 0.9
+( 48 -224 112 ) ( 64 -96 96 ) ( 64 -224 96 ) tnttextures/graphics/doslvr13 0 96 0 0.8 0.9
+( 64 -224 16 ) ( 64 -224 17 ) ( 64 -223 16 ) tnttextures/graphics/doslvr13 -52 0 0 0.8 0.9
 }
 }
