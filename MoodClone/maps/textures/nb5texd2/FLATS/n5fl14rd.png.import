@@ -2,31 +2,29 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/n5fl14rd.png-22564611beb3f6962549af07d740a6ac.s3tc.stex"
-path.etc2="res://.import/n5fl14rd.png-22564611beb3f6962549af07d740a6ac.etc2.stex"
+path="res://.import/n5fl14rd.png-22564611beb3f6962549af07d740a6ac.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2" ],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://maps/textures/nb5texd2/FLATS/n5fl14rd.png"
-dest_files=[ "res://.import/n5fl14rd.png-22564611beb3f6962549af07d740a6ac.s3tc.stex", "res://.import/n5fl14rd.png-22564611beb3f6962549af07d740a6ac.etc2.stex" ]
+dest_files=[ "res://.import/n5fl14rd.png-22564611beb3f6962549af07d740a6ac.stex" ]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=1
 flags/filter=true
-flags/mipmaps=true
+flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=2
-process/fix_alpha_border=false
+flags/srgb=1
+process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
