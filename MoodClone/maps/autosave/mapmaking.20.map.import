@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+path="res://.import/mapmaking.20.map-b54469275331083bee3e9bbbf3fb64bb.tres"
+
+[deps]
+
+source_file="res://maps/autosave/mapmaking.20.map"
+dest_files=[ "res://.import/mapmaking.20.map-b54469275331083bee3e9bbbf3fb64bb.tres" ]
+
+[params]
+
