@@ -1,24 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/test level.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/EnemyBasicGrunt.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/level one map.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
 
-[node name="World" type="Spatial"]
+[node name="world" type="Spatial"]
 
-[node name="player" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.53236, 0 )
+[node name="player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.23585, 0 )
 
-[node name="test level" parent="." instance=ExtResource( 2 )]
-
-[node name="EnemyBasicGrunt" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2213, -0.516664, 31.9017 )
-
-[node name="EnemyBasicGrunt2" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.7433, 1.75845, 36.6729 )
-
-[node name="EnemyBasicGrunt3" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7369, -0.516664, 31.9017 )
-
-[node name="EnemyBasicGrunt4" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.2086, -0.516664, 37.4468 )
+[node name="Spatial" parent="." instance=ExtResource( 1 )]
