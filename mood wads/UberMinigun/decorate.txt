@@ -1,0 +1,58 @@
+ACTOR UberMinigun : Weapon
+{
+    Inventory.PickupMessage "You got the UberMinigun!"
+    Inventory.PickupSound "misc/w_pkup"
+    Weapon.SelectionOrder 400
+    Weapon.Kickback 90
+    Weapon.AmmoType "Clip"
+    Weapon.AmmoGive 100
+    Weapon.AmmoUse 1
+    Obituary "%k turned %o into swiss cheese using %p Uberminigun"
+    States
+    {
+    Spawn:
+       MINI A -1
+       LOOP
+    Ready:
+       MING A 9 A_WeaponReady
+       Loop
+    Deselect: 
+       MING A 1 A_Lower
+	   NULL AA 0 A_LOWER
+       LOOP
+    Select: 
+       MING A 1 A_Raise
+	   NULL AA 0 A_RAISE
+       LOOP
+    Fire:
+       MING A 0 A_PlaySound("weapons/minigunup")
+       MING BCDEFGH 2 
+       MING CEGABCDEFGHACEGE 1 
+    Hold:
+       MINF A 0 A_GunFlash
+	   MINF A 0 A_PlayweaponSound("weapons/minigun")
+	   MINF A 0 A_PlaySound("weapons/minigunhold")
+       MINF A 1 BRIGHT A_FireBullets (5.6, 0, 2, 5, "BulletPuff")
+	   //MINF A 0 A_PlayweaponSound("weapons/minigun")
+       MINF C 1 BRIGHT //A_FireBullets (5.6, 0, 2, 5, "BulletPuff")
+	  // MINF A 0 A_PlayweaponSound("weapons/minigun")
+       MINF B 1 BRIGHT //A_FireBullets (5.6, 0, 2, 5, "BulletPuff")
+       MING C 0 A_ReFire
+       MING A 0 A_PlaySound("weapons/minigundown")
+       MING A 1
+       MING C 1 
+       MING E 1
+       MING G 1 
+       MING A 1
+       MING B 1 
+       MING C 1
+       MING D 1 
+       MING E 1
+       MING F 1 
+       MING G 1
+       MING H 1
+       MING ABCDEFGH 1
+	   MING ABCDEFGH 2
+       Goto Ready
+    }
+}

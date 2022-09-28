@@ -1,0 +1,16 @@
+**********************************UBERMINIGUN**********************************
+Info:
+Name: Uber minigun
+Class: Level 4
+Type: Hitscan
+Palette: Doom
+Summon: UberMinigun
+Ammotype: clip
+AltFire: no
+
+Credits:
+Submitted: lolo_is_cool
+Decorate: lolo_is_cool
+Sprites: lolo_is_cool
+Sounds: Croteam
+Idea Base: n/a

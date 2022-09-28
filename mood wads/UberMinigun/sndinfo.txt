@@ -1,0 +1,4 @@
+weapons/minigunhold DSMGMID
+weapons/minigunup dsmgup
+weapons/minigundown dsmgdown
+weapons/minigun DSMINIGN
