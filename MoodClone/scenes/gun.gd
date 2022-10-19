@@ -18,7 +18,7 @@ func check_hit():
 			if ray.get_collider().is_in_group("Enemy"):
 				ray.get_collider().take_damage(damage)
 				var new_blood = blood.instance()
-				get_node("/root/World").add_child(new_blood)
+				get_node("/root/world").add_child(new_blood)
 				new_blood.global_transform.origin = ray.get_collision_point()
 				new_blood.emitting = true
 	

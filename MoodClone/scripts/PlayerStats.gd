@@ -9,7 +9,7 @@ var max_armor = 100
 var guns_carried = []
 var ammo_pistol = 50
 var ammo_rocket = 0
-var ammo_shells = 0
+var ammo_shells = 20
 var ammo_plasma = 0
 var ammo_max_pistol = 200
 var ammo_max_rocket = 50
@@ -19,7 +19,7 @@ var ammo_max_plasma = 200
 var red_key = false
 var blue_key = false
 var yellow_key = false
-var current_gun = "Pistol"
+var current_gun = "Shotgun"
  
 func reset():
 	var health = 100
