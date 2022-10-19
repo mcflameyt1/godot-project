@@ -4,14 +4,14 @@
 [ext_resource path="res://Sprites/Uzi/uzigb0.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/Uzi/uzigc0.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/Uzi/uzigd0.png" type="Texture" id=4]
-[ext_resource path="res://scenes/gun.gd" type="Script" id=6]
+[ext_resource path="res://scenes/Uzi.gd" type="Script" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "idle",
-"speed": 5.0
+"speed": 12.0
 }, {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
@@ -20,7 +20,7 @@ animations = [ {
 } ]
 
 [node name="Uzi" type="Spatial"]
-script = ExtResource( 6 )
+script = ExtResource( 5 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -38,7 +38,6 @@ rotation = 3.14159
 scale = Vector2( 3, 3 )
 frames = SubResource( 1 )
 animation = "shoot"
-frame = 2
 playing = true
 centered = false
 flip_h = true

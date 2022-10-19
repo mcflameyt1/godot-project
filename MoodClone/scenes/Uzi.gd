@@ -18,7 +18,7 @@ func check_hit():
 			if ray.get_collider().is_in_group("Enemy"):
 				ray.get_collider().take_damage(damage)
 				var new_blood = blood.instance()
-				get_node("/root/World").add_child(new_blood)
+				get_node("/root/world").add_child(new_blood)
 				new_blood.global_transform.origin = ray.get_collision_point()
 				new_blood.emitting = true
 	
@@ -26,11 +26,11 @@ func make_flash():
 	pass
 	
 func _process(delta):
-	if Input.is_action_just_pressed("shoot") and can_shoot and PlayerStats.ammo_pistol > 0:
+	if Input.is_action_pressed("shoot") and can_shoot and PlayerStats.ammo_shells > 0:
 		gun_sprite.play("shoot")
 		make_flash()
 		check_hit()
-		PlayerStats.change_pistol_ammo(-1)
+		PlayerStats.change_shotgun_ammo(-1)
 		can_shoot = false
 		yield (gun_sprite,"animation_finished")
 		
