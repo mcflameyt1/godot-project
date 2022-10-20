@@ -67,3 +67,9 @@ func _process(delta):
 		if current_gun < 0:
 			current_gun = len(carried_guns)-1
 		change_gun(current_gun)
+
+
+func _on_Area_area_entered(area):
+	if area.is_in_group("Deadly"):
+		PlayerStats.change_health(-100) 
+		# Replace with function body.
